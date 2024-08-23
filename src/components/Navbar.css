@@ -1,0 +1,85 @@
+@import '../styles/global.css';
+
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 0.1rem 2rem;
+  box-sizing: border-box;
+  position: relative; /* Ensure the navbar is positioned relative to the page */
+}
+
+.logo-text {
+  font-size: 30px;
+  padding: 10px 5px;
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none
+}
+
+.menu-toggle {
+  display: none;
+  width: 100%;
+  align-items: right;  
+  text-align: right;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  max-width: 100%; /* Ensure it doesn't exceed the width of the navbar */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  
+}
+
+.navbar-links a {
+  max-width: 100%;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    z-index: 1;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #0cdade;
+  --secondary-color: #1c1c1c;
+  --background-color: #17191c;
+  --text-color: #ffffff;
+  --accent-color: #ff5722; /* Example of an accent color */
+  --button-bg: #07b0b3; /* Example for button background color */
+  --button-hover-bg: #14e1ec; /* Example for button hover background color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  

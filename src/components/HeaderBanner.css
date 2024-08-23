@@ -1,0 +1,166 @@
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Full viewport height */
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header-banner .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+
+.header-banner .left .company-name {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.company-name h1 {
+  text-transform: capitalize;
+}
+
+.company-name h1:nth-child(2) {
+  color: var(--primary-color);
+}
+
+.header-banner h1 {
+  font-size: 6rem; /* Adjusted for smaller screens */
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header-banner p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.right {
+  flex: 1;
+}
+
+.header-banner .right .header-image {
+  width: 60%;
+  border-radius: 5px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.primary-bg {
+  background: linear-gradient(135deg, #1c1c1c, #2d2d2d);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header-banner {
+    gap: 50px; /* Reduce gap for smaller screens */
+  }
+
+  .header-banner h1 {
+    font-size: 6rem; /* Adjust font size for slightly smaller screens */
+  }
+
+  .header-banner p {
+    font-size: 1.25rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .header-banner .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-banner .left .company-name {
+    flex-direction: row;
+    gap: 1rem; /* Adjust spacing between h1 elements */
+  }
+
+  .header-banner h1 {
+    font-size: 5rem; /* Adjust font size for smaller screens */
+  }
+
+  .header-banner p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    padding: 0 10px; /* Reduce padding */
+  }
+
+  .header-banner .left .company-name {
+    gap: 0.5rem; /* Adjust spacing */
+  }
+
+  .header-banner h1 {
+    font-size: 4rem; /* Further adjust font size */
+  }
+
+  .header-banner p {
+    font-size: 0.875rem; /* Further adjust paragraph font size */
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+
+  .header-banner .right .header-image {
+    width: 90%; /* Adjust image width */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-banner h1 {
+    font-size: 2rem; /* Smaller font size for very small screens */
+  }
+
+  .header-banner p {
+    font-size: 0.75rem; /* Smaller paragraph font size */
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
