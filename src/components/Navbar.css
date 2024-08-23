@@ -2,14 +2,13 @@
 
 .navbar {
   background-color: transparent;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(6px);
   display: flex;
   justify-content: space-between;
   align-items: center; /* Center items vertically */
   padding: 0.1rem 2rem;
   box-sizing: border-box;
   position: relative; /* Ensure the navbar is positioned relative to the page */
+  z-index: 1000;
 }
 
 .logo-text {
@@ -37,8 +36,8 @@
   display: flex;
   gap: 2em;
   align-items: center;
-  max-width: 100%; /* Ensure it doesn't exceed the width of the navbar */
-  box-sizing: border-box; /* Include padding in the element's total width */
+  max-width: 100%;
+  box-sizing: border-box; 
   
 }
 
@@ -64,13 +63,22 @@
     top: 100%; /* Position below the navbar */
     left: 0;
     right: 0;
-    background-color: var(--secondary-color);
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
     display: none;
-    z-index: 1;
+
+    background: rgba(0, 0, 0, 0.355);
+    border-radius: 16px;
+    height: 100vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.129);
+    z-index: 1001;
+    overflow: hidden;
   }
 
   .navbar-links.open {

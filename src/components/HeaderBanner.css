@@ -19,7 +19,7 @@
   position: absolute;
   border-radius: 50%;
   background-color: var(--primary-color);
-  filter: blur(150px);
+  filter: blur(100px);
   z-index: -1; /* Ensure these are behind other content */
 }
 
@@ -31,9 +31,9 @@
 }
 
 .header-banner::after {
-  bottom: 20px; /* Positioned from the bottom */
-  right: 20px;  /* Positioned from the right */
-  width: 150px; /* Adjust width if needed */
+  bottom: 15px; /* Positioned from the bottom */
+  right: 5px;  /* Positioned from the right */
+  width: 120px; /* Adjust width if needed */
   height: 150px; /* Adjust height if needed */
 }
 
@@ -43,6 +43,17 @@
   flex-direction: column;
   justify-content: right;
   align-items: right;
+  height: 80%;
+  justify-content: center;
+
+  /* glassy effect */
+  background: rgba(255, 255, 255, 0.067);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.129);
 }
 
 .header-banner .left .company-name {

@@ -13,7 +13,7 @@ const HeaderBanner = () => {
       <a href="#contact" className="cta-button">Get in Touch</a>
     </div>
     <div className="right">
-      <img src="header/header-image-2.png" className='header-image' alt="" />
+      <img src="header/header-image-3.png" className='header-image' alt="" />
     </div>
     </header>
   );
