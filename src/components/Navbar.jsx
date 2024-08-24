@@ -17,7 +17,9 @@ const Navbar = () => {
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <a href="#projects">Projects</a>
         <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">{isOpen ? "Facebook" : <i className='fa fa-facebook-official'></i>}</a>
+        <a href="#contact">{isOpen ? "LinkedIn" : <i className='fa fa-linkedin'></i>}</a>
+        <a href="#contact" className='contact-button'>Contact</a>
       </div>
     </nav>
   );

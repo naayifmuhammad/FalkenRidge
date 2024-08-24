@@ -8,11 +8,15 @@ const Projects = () => {
       <div>
       
         <h3><CountUp end={60} duration={4}/>+ Projects Completed</h3>
-        <p>We deliver quality work every time.</p>
+        <div className="para-container">
+        <i className='fa fa-truck'></i><p>We deliver quality work every time.</p>
+        </div>
       </div>
       <div>
         <h3><CountUp end={100} duration={4}  />+ Satisfied Clients</h3>
-        <p>Your success is our priority.</p>
+        <div className="para-container">
+        <i className='fa fa-line-chart'></i><p>Your success is our priority.</p>
+        </div>
       </div>
     </section>
   );

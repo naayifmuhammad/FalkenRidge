@@ -1,3 +1,21 @@
+/* animation for background elements */
+
+@keyframes color-changer{
+  0%{
+    background-color: #00dfff;
+    width: 120px;
+  }
+  50%{
+    background-color: #00ffdf;
+    width: 150px;
+  }
+  100%{
+    background-color: #00dfff;
+    width: 120px;
+  }
+}
+
+
 .header-banner {
   position: relative;
   width: 100%;
@@ -26,15 +44,17 @@
 .header-banner::before {
   top: 20px;
   left: 20px;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 150px;
+  animation: color-changer 5s ease-in-out infinite;
 }
 
 .header-banner::after {
-  bottom: 15px; /* Positioned from the bottom */
-  right: 5px;  /* Positioned from the right */
-  width: 120px; /* Adjust width if needed */
-  height: 150px; /* Adjust height if needed */
+  bottom: 15px; 
+  right: 5px;  
+  width: 120px;
+  height: 150px;
+  animation: color-changer 5s ease-in-out infinite;
 }
 
 
@@ -43,7 +63,7 @@
   flex-direction: column;
   justify-content: right;
   align-items: right;
-  height: 80%;
+  height: 50%;
   justify-content: center;
 
   /* glassy effect */
@@ -63,7 +83,7 @@
 }
 
 .company-name h1 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .company-name h1:nth-child(2) {

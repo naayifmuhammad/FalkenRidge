@@ -9,6 +9,15 @@
     flex: 1;
   }
   
+  .projects-section .para-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+  }
+
   .projects-section h3 {
     font-size: 2rem;
     color: #07e9ec;
