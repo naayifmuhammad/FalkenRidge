@@ -3,14 +3,19 @@
     text-align: center;
     margin: 10px 5%;
   }
+  
   .team-section .section-header-meet{
-    font-size: 2rem;
+    font-size: 3rem;
   }
+  
+    .section-header-meet .highlight {
+      color: var(--primary-color); /* Apply your desired color */
+    }
   
   .team-members {
     margin-top: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 25px;
   }
@@ -19,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px; /* Adjust as needed */
+    gap: 10px;
   }
   
   .badge {
@@ -33,10 +38,12 @@
     border: 2px solid white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
   }
+
   .badge:hover{
     transform: translateY(-5px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   
   .member-image {
@@ -46,6 +53,12 @@
   
   .member-name {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--text-color);
+    text-wrap: nowrap;
+  }
+  .member-designation {
+    font-size: 1rem;
+    color: rgb(177, 177, 177);
+    text-wrap: nowrap;
   }

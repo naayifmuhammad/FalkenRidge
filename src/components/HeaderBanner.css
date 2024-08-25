@@ -130,6 +130,7 @@
   border-radius: 5px;
   object-fit: contain;
   object-position: center;
+  animation: floating-anim infinite 10s;
 }
 
 .primary-bg {

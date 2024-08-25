@@ -8,9 +8,24 @@
   --button-hover-bg: #14e1ec; /* Example for button hover background color */
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
     color: #ffffff;
     font-family: 'Arial', sans-serif;
   }
-  
+
+  @keyframes floating-anim{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
