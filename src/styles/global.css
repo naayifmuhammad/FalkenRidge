@@ -4,8 +4,8 @@
   --background-color: #17191c;
   --text-color: #ffffff;
   --accent-color: #ff5722; /* Example of an accent color */
-  --button-bg: #07b0b3; /* Example for button background color */
-  --button-hover-bg: #14e1ec; /* Example for button hover background color */
+  --button-bg: #0cbfc2; /* Example for button background color */
+  --button-hover-bg: #00f2ff; /* Example for button hover background color */
 }
 
 html{
