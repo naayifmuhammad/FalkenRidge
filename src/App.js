@@ -32,7 +32,10 @@ function App() {
               path="/terms-and-conditions"
               element={<TermsAndConditions />}
             />
-            <Route path="/careers" element={<Careers />} />
+            <Route 
+              path="/careers"  
+              element={<Careers />} 
+            />
           </Routes>
         </div>
       </Router>

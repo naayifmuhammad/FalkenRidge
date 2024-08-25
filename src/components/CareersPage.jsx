@@ -1,7 +1,7 @@
 import React from 'react';
 import './CareersPage.css';
 
-const Careers = () => {
+const CareersPage = () => {
   return (
     <>
     <section className="career-intro">
@@ -11,7 +11,7 @@ const Careers = () => {
         <a href="#careers-page" className="cta-button">Explore Careers</a>
       </div>
       <div className="career-intro-right">
-        <img src="Careers/careers.jpg" alt="Professional Team" />
+        <img src="/Careers/careers.jpg" alt="Professional Team" />
       </div>
     </section>
 
@@ -49,4 +49,4 @@ const Careers = () => {
   );
 };
 
-export default Careers;
+export default CareersPage;

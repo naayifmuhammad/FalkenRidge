@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="logo-text"><img src="company_assets/logo.png" width={70} alt="FalkenRidge" /></a>
+      <a href="/" className="logo-text"><img src="/company_assets/logo.png" width={70} alt="FalkenRidge" /></a>
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
