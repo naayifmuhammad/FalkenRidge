@@ -15,7 +15,7 @@ const Footer = () => {
             <li><a href="#projects">Our Projects</a></li>
             <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><a href="/careers">Careers</a></li>
           </ul>
         </div>
         <div className="footer-section">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="footer-legal">
           <p>&copy; 2024 FalkenRidge Pvt. Ltd. All Rights Reserved.</p>
-          <p><a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
+          <p><a href="/terms-and-conditions">Terms of Service</a></p>
         </div>
       </div>
     </footer>

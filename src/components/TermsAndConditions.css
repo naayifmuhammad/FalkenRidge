@@ -1,0 +1,9 @@
+.terms-and-conditions{
+    display: flex;
+    margin: 3rem 5rem;
+    flex-direction: column;
+}
+.terms-and-conditions a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
