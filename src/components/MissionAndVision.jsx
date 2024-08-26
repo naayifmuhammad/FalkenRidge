@@ -5,16 +5,28 @@ const MissionAndVision = () => {
 
   useEffect(() => {
     if (window.ScrollReveal) {
-      window.ScrollReveal().reveal('.mission', {
+      window.ScrollReveal().reveal('.mission-image', {
         duration: 1500,        
         distance: '500px',      
         origin: 'left',       
         reset: true,
       });
-      window.ScrollReveal().reveal('.vision', {
+      window.ScrollReveal().reveal('.mission-text', {
         duration: 1500,        
         distance: '500px',      
         origin: 'right',       
+        reset: true,
+      });
+      window.ScrollReveal().reveal('.vision-image', {
+        duration: 1500,        
+        distance: '500px',      
+        origin: 'right',       
+        reset: true,
+      });
+      window.ScrollReveal().reveal('.vision-text', {
+        duration: 1500,        
+        distance: '500px',      
+        origin: 'left',       
         reset: true,
       });
     }

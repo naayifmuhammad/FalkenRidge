@@ -1,11 +1,10 @@
 .about-section {
   padding: 40px;
+  overflow-x: hidden;
 }
 
 .about-us {
   padding: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 
 .about-us h2 {
