@@ -48,7 +48,6 @@
   transition: color 0.3s;
 }
 
-
 .navbar-links a:hover {
   color: var(--primary-color);
 }

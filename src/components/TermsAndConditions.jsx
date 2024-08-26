@@ -64,6 +64,7 @@ const TermsAndConditions = () => {
             <a
               href="https://www.termsfeed.com/terms-conditions-generator/"
               target="_blank"
+              rel="noreferrer"
             >
               Terms and Conditions Generator
             </a>
@@ -83,7 +84,7 @@ const TermsAndConditions = () => {
             <strong>Website</strong> refers to Falkenridge, accessible from{" "}
             <a
               href="http://falkenridge.com"
-              rel="external nofollow noopener"
+              rel="noreferrer"
               target="_blank"
             >
               http://falkenridge.com
@@ -301,7 +302,7 @@ const TermsAndConditions = () => {
             By visiting this page on our website:{" "}
             <a
               href="https://falkenridge.com/contact"
-              rel="external nofollow noopener"
+              rel="noreferrer"
               target="_blank"
             >
               https://falkenridge.com/contact

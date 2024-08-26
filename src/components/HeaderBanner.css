@@ -31,7 +31,6 @@
   box-sizing: border-box;
 }
 
-.header-banner::before,
 .header-banner::after {
   content: "";
   position: absolute;

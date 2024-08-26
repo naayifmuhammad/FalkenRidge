@@ -10,8 +10,9 @@ import Team from './components/Team';
 import TermsAndConditions from './components/TermsAndConditions'
 import Footer from './components/Footer';
 import Careers from './components/CareersPage';
-import About from './components/About';
+import MissionAndVision from './components/MissionAndVision';
 import SmoothScroll from "smooth-scroll";
+import Contact from "./components/Contact"
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -31,7 +32,7 @@ function App() {
               element={
                 <>
                   <HeaderBanner />
-                  <About />
+                  <MissionAndVision />
                   <Projects />
                   <Team />
                 </>
@@ -44,6 +45,10 @@ function App() {
             <Route 
               path="/careers"  
               element={<Careers />} 
+            />
+            <Route 
+              path="/contact"  
+              element={<Contact />} 
             />
           </Routes>
         </div>

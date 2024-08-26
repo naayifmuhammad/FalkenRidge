@@ -19,7 +19,7 @@ const Navbar = () => {
         <a href="/#team">Team</a>
         <a href="https://facebook.com" target='_blank' rel="noreferrer">{isOpen ? "Facebook" : <i className='fa fa-facebook-official'></i>}</a>
         <a href="https://linkedin.com" target='_blank' rel="noreferrer">{isOpen ? "LinkedIn" : <i className='fa fa-linkedin'></i>}</a>
-        <a href="/contacts" className='contact-button'>Contact</a>
+        <a href="/contact" className='contact-button'>Contact</a>
       </div>
     </nav>
   );
