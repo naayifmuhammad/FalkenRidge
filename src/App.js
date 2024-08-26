@@ -10,6 +10,14 @@ import Team from './components/Team';
 import TermsAndConditions from './components/TermsAndConditions'
 import Footer from './components/Footer';
 import Careers from './components/CareersPage';
+import About from './components/About';
+import SmoothScroll from "smooth-scroll";
+
+
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 2000,
+  speedAsDuration: true,
+});
 
 function App() {
   return (
@@ -23,6 +31,7 @@ function App() {
               element={
                 <>
                   <HeaderBanner />
+                  <About />
                   <Projects />
                   <Team />
                 </>
