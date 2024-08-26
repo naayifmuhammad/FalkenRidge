@@ -9,25 +9,25 @@ const MissionAndVision = () => {
         duration: 1500,        
         distance: '500px',      
         origin: 'left',       
-        reset: true,
+        reset: false,
       });
       window.ScrollReveal().reveal('.mission-text', {
         duration: 1500,        
         distance: '500px',      
         origin: 'right',       
-        reset: true,
+        reset: false,
       });
       window.ScrollReveal().reveal('.vision-image', {
         duration: 1500,        
         distance: '500px',      
         origin: 'right',       
-        reset: true,
+        reset: false,
       });
       window.ScrollReveal().reveal('.vision-text', {
         duration: 1500,        
         distance: '500px',      
         origin: 'left',       
-        reset: true,
+        reset: false,
       });
     }
   }, []); // Empty dependency array ensures this runs only once after component mounts
