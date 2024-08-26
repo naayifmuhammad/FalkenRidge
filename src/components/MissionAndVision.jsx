@@ -1,13 +1,32 @@
-import React from 'react';
+import {useEffect, React} from 'react';
 import './MissionAndVision.css';
 
 const MissionAndVision = () => {
+
+  useEffect(() => {
+    if (window.ScrollReveal) {
+      window.ScrollReveal().reveal('.mission', {
+        duration: 1500,        
+        distance: '500px',      
+        origin: 'left',       
+        reset: true,
+      });
+      window.ScrollReveal().reveal('.vision', {
+        duration: 1500,        
+        distance: '500px',      
+        origin: 'right',       
+        reset: true,
+      });
+    }
+  }, []); // Empty dependency array ensures this runs only once after component mounts
+
+
   return (
     <section id="about" className="about-section">
       <div className="mission-vision">
         <div className="mission">
           <div className="mission-image">
-            <img src="About/about-mission.png" alt="Mission" />
+            <img src="Images/mission.jpg" alt="Mission" />
           </div>
           <div className="mission-text">
             <h2>Mission</h2>
@@ -22,7 +41,10 @@ const MissionAndVision = () => {
           </div>
         </div>
 
-        <div className="vision">
+        <div className="about-us vision">
+          <div className="vision-image">
+            <img src="Images/vision.jpg" alt="Vision" />
+          </div>
           <div className="vision-text">
             <h2>Vision</h2>
             <p>
@@ -33,9 +55,6 @@ const MissionAndVision = () => {
               the complexities of modern technology, enabling them to achieve
               their full potential and lead in their respective industries.
             </p>
-          </div>
-          <div className="vision-image">
-            <img src="About/about-vision.png" alt="Vision" />
           </div>
         </div>
       </div>
