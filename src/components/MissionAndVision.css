@@ -27,23 +27,25 @@
 }
 
 .mission, .vision {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   gap: 0;
+  box-sizing: border-box;
 }
 
 .mission-image, .vision-image {
   flex: 1;
   max-width: 100%;
+  display: flex;
   position: relative;
+  justify-content: flex-end;
 
 }
 
 .mission-image img, .vision-image img {
-  max-width: 100%;
+  width: clamp(200px,600px,100%);
   border-radius: 10px;
   z-index: 1;
   padding: 0;
@@ -51,12 +53,12 @@
 
 .mission-text, .vision-text {
   background-color: rgb(255, 255, 88);
+  margin-top: 10%;
   padding: 20px;
   border-radius: 5px;
-  max-width: 40%;
+  width: clamp(500px,600px,700px);
   padding-left: 5%;
   color: var(--text-black);
-  transform: translate(0%,50%);
 }
 
 .mission-text h2, .mission-text p {
@@ -87,13 +89,13 @@
   .mission-image, .vision-image {
     max-width: 100%;
     margin-bottom: 10px; /* Reduced margin to bring elements closer */
+    justify-content: center;
   }
 
   .mission-text, .vision-text {
     background-color: rgb(255, 255, 88);
     padding: 20px;
     border-radius: 2px;
-    max-width: 100%;
     padding-left: 0;
     color: var(--text-black);
     transform: none; /* Reset transform for small screens */

@@ -18,7 +18,7 @@
 }
 
 .contact .left .contact-intro h1{
-    font-size: clamp(2rem, 4rem, 3rem);
+    font-size: clamp(2rem, 3rem, 5vw);
     text-wrap: nowrap;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -67,14 +67,17 @@
   
   .btn-primary {
     background-color: var(--button-bg);
-    width: 30rem;
+    width: 300px;
     margin-top: 20px;
     color: #fff;
     border-radius: 15px;
+    transition: width 0.5s ease-in-out;
   }
   
   .btn-primary:hover {
     background-color: var(--button-hover-bg);
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
   }
   
   .form-control::placeholder {
@@ -95,9 +98,6 @@
         font-size: 1rem;
     }
 
-    .right.item .btn-primary{
-        width: 20rem;
-    }
 
     .right.item h1{
         font-size: 2rem;
