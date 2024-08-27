@@ -30,7 +30,7 @@ const MissionAndVision = () => {
         reset: false,
       });
     }
-  }, []); // Empty dependency array ensures this runs only once after component mounts
+  }, []);
 
 
   return (
