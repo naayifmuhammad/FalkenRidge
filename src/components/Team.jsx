@@ -23,8 +23,8 @@ const Team = () => {
           <div className="badge">
             <img
               className="member-image"
-              src="company_assets/team/nikhil.png"
-              alt="Nikhil"
+              src="company_assets/team/naayif.png"
+              alt="Naayif"
             />
           </div>
           <span className="member-name">Muhammad Naayif</span>

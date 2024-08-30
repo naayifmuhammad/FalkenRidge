@@ -30,8 +30,8 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact</h4>
           <p>Email: <a href="mailto:info@falkenridge.com">info@falkenridge.com</a></p>
-          <p>Phone: +91-XXXX-XXXXXX</p>
-          <p>Address: 123 Tech Park, Kerala, India</p>
+          <p>Phone: +91-8304-084027</p>
+          <p>Address: Falkenridge Pvt. Ltd, Kerala, India</p>
         </div>
       </div>
       <div className="footer-bottom">
