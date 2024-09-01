@@ -36,8 +36,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-socials">
-          <a href="https://facebook.com"><i className="fa fa-facebook"></i></a>
-          <a href="www.linkedin.com/in/falkenridge"><i className="fa fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/company/falkenridge"><i className="fa fa-linkedin"></i></a>
           <a href="https://x.com/FalkenRidge"><i className="fa fa-twitter"></i></a>
           <a href="https://github.com/FalkenRidge"><i className="fa fa-github"></i></a>
         </div>
