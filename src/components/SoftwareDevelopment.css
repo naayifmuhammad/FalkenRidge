@@ -1,0 +1,45 @@
+#software-development {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #software-development h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+  }
+  
+  #software-development p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  .service-item {
+    margin-bottom: 30px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.5rem;
+    color: #00d1b2;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  

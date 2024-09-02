@@ -1,0 +1,55 @@
+#cloud-solutions {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #cloud-solutions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+  }
+  
+  #cloud-solutions p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .cloud-services {
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+  .cloud-services h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .service-item {
+    margin-bottom: 30px;
+  }
+  
+  .service-item h4 {
+    font-size: 1.5rem;
+    color: #00d1b2;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  

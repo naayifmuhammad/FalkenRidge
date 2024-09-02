@@ -1,0 +1,22 @@
+.projects-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .projects-section div {
+    flex: 1;
+  }
+  
+  .projects-section h3 {
+    font-size: 2rem;
+    color: #07e9ec;
+  }
+  
+  .projects-section p {
+    margin-top: 1rem;
+  }
+  

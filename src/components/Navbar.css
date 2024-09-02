@@ -1,0 +1,93 @@
+@import '../styles/global.css';
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 0.1rem 2rem;
+  box-sizing: border-box;
+  position: relative; /* Ensure the navbar is positioned relative to the page */
+  z-index: 1000;
+}
+
+.logo-text {
+  font-size: 30px;
+  padding: 10px 5px;
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none
+}
+
+.menu-toggle {
+  display: none;
+  width: 100%;
+  align-items: right;  
+  text-align: right;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: border-box; 
+  
+}
+
+.navbar-links a {
+  max-width: 100%;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+
+    background: rgba(0, 0, 0, 0.355);
+    border-radius: 16px;
+    height: 100vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.129);
+    z-index: 1001;
+    overflow: hidden;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

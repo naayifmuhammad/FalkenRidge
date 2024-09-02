@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #0cdade;
+  --secondary-color: #1c1c1c;
+  --background-color: #17191c;
+  --text-color: #ffffff;
+  --accent-color: #ff5722; /* Example of an accent color */
+  --button-bg: #0cbfc2; /* Example for button background color */
+  --button-hover-bg: #14ebf7; /* Example for button hover background color */
+  --text-black : rgb(57, 57, 57);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  @keyframes floating-anim{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }

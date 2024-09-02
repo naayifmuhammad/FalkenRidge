@@ -1,0 +1,24 @@
+
+#what-we-do {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+  }
+  
+  #what-we-do p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  #what-we-do p strong {
+    color: #00d1b2;
+  }
+  
