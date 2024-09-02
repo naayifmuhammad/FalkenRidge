@@ -1,0 +1,61 @@
+{
+    "services": [
+        {
+          "name": "Software Development",
+          "description": "Custom software solutions tailored to your business needs.",
+          "link": "/software-development",
+          "icon": "FaCode"
+        },
+        {
+          "name": "Cloud Solutions",
+          "description": "Scalable cloud solutions to enhance your business operations.",
+          "link": "/cloud-solutions",
+          "icon": "FaCloud"
+        },
+        {
+          "name": "Consulting",
+          "description": "Expert advice to guide your business strategy and technology.",
+          "link": "/consulting",
+          "icon": "FaLightbulb"
+        },
+        {
+          "name": "Portfolio Development",
+          "description": "Personal and professional portfolios for everyone and everything.",
+          "link": "/portfolio",
+          "icon": "FaPaintBrush"
+        },
+        {
+          "name": "Product Design",
+          "description": "Comprehensive product design services including logo design, UI/UX, and more.",
+          "link": "/product-design",
+          "icon": "FaPencilRuler"
+        }
+    ],
+    "productDesign": {
+        "description": "Our Product Design services cover a wide range of creative solutions including logo design, UI/UX design, packaging design, and more to help your brand stand out."
+    },
+    "softwareDevelopment": {
+      "description": "We offer custom software development services..."
+    },
+    "cloudSolutions": {
+      "description": "Our cloud solutions help you scale your business..."
+    },
+    "consulting": {
+      "description": "Our consulting services provide expert guidance..."
+    },
+    "portfolios": [
+    {
+      "title": "Personal Portfolio",
+      "description": "Showcase your personal achievements and skills.",
+      "image": "/images/personal-portfolio.jpg",
+      "link": "https://interior-design-jckw.vercel.app/" 
+    },
+    {
+      "title": "Professional Portfolio",
+      "description": "Highlight your professional experiences and projects.",
+      "image": "/images/professional-portfolio.jpg",
+      "link": "https://keralacongress.org.in/" 
+    }
+    ]
+  }
+  
