@@ -1,0 +1,53 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.maintenance-section {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.maintenance-section h1{
+    font-size: clamp(1rem,2rem,1.5rem);
+}
+.icons {
+    position: relative;
+    width: 200px; /* Adjust the size based on the icon positions */
+    height: 150px; /* Adjust the size based on the icon positions */
+}
+
+.icon-wrapper {
+    position: absolute;
+    left: 25%;
+}
+
+.icon {
+    animation: rotate infinite 20s linear;
+}
+
+/* Position each wrapper */
+.icon-1 {
+    transform: translate(-20px, 0);
+    font-size: 100px;
+}
+
+.icon-2 {
+    transform: translate(50px, -40px);
+    font-size: 80px;
+}
+
+.icon-3 {
+    transform: translate(55px, 70px);
+    font-size: 60px;
+}

@@ -12,19 +12,19 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#projects">Our Projects</a></li>
+            <li><a href="/site-maintenance">Our Projects</a></li>
             <li><a href="#team">Our Team</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
             <li><a href="/careers">Careers</a></li>
           </ul>
         </div>
         <div className="footer-section">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Software Development</a></li>
-            <li><a href="#services">Cloud Solutions</a></li>
-            <li><a href="#services">Consulting</a></li>
-            <li><a href="#services">Product Design</a></li>
+            <li><a href="/software-development">Software Development</a></li>
+            <li><a href="/cloud-solutions">Cloud Solutions</a></li>
+            <li><a href="/consulting">Consulting</a></li>
+            <li><a href="/product-design">Product Design</a></li>
           </ul>
         </div>
         <div className="footer-section">
