@@ -17,16 +17,20 @@ const Services = () => {
 
   return (
     <section id="services">
-      <h2>Our Services</h2>
+      <div className="services-heading-container">
+      <h1 className='heading-gradient'>Our Services</h1>
+      </div>
       <div className="services-container">
         {services.map((service) => (
           <div key={service.name} className="service-card">
             {iconMap[service.icon]} {/* Dynamically rendering the icon */}
-            <h3>{service.name}</h3>
+            <h3 className='heading-gradient'>{service.name}</h3>
             <p>{service.description}</p>
-            <Link to={service.link} className="learn-more">
+            <div className="btn-container">
+              <Link to={service.link} className="learn-more btn-secondary">
               Learn More
             </Link>
+            </div>
           </div>
         ))}
       </div>

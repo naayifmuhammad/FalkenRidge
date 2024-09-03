@@ -36,9 +36,9 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-socials">
-          <a href="https://www.linkedin.com/company/falkenridge"><i className="fa fa-linkedin"></i></a>
-          <a href="https://x.com/FalkenRidge"><i className="fa fa-twitter"></i></a>
-          <a href="https://github.com/FalkenRidge"><i className="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/company/falkenridge" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a>
+          <a href="https://x.com/FalkenRidge" target="_blank" rel="noreferrer" ><i className="fa fa-twitter"></i></a>
+          <a href="https://github.com/FalkenRidge" target="_blank" rel="noreferrer"><i className="fa fa-github"></i></a>
         </div>
         <div className="footer-legal">
           <p>&copy; 2024 FalkenRidge Pvt. Ltd. All Rights Reserved.</p>

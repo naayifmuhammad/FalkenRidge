@@ -1,68 +1,68 @@
 #services {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 50px 20px;
+    color: var(--text-primary); /* White text */
+    padding: 50px 5rem;
     text-align: center;
   }
-  
-  #services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #00d1b2; /* Accent color for the heading */
+  .services-heading-container{
+    display: flex;
+    justify-content: center;
   }
+  #services h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+    margin-bottom: 40px;
+    }
   
   .services-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     gap: 20px;
   }
   
   .service-card {
-    background-color: #1c1c1e; /* Dark gray background for cards */
+    display: inline-flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1e; 
     border-radius: 10px;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .service-card:hover {
-    transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
   }
   
   .service-card h3 {
     font-size: 1.5rem;
+    flex: 1;
     margin: 15px 0;
-    color: #00d1b2; /* Accent color for the card titles */
   }
   
   .service-card p {
     font-size: 1rem;
+    flex: 2;
     line-height: 1.6;
-    color: #ccc; /* Slightly lighter text for descriptions */
+    color: var(--text-primary); /* Slightly lighter text for descriptions */
   }
   
   .service-card .learn-more {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #00d1b2; /* Button color */
-    color: #000;
-    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
     transition: background-color 0.3s ease;
-  }
-  
-  .service-card .learn-more:hover {
-    background-color: #00a892; /* Darker button on hover */
   }
   
   /* Icon styles */
   .service-card svg {
+    flex: 1;
     font-size: 2.5rem;
-    color: #00d1b2; /* Accent color for the icons */
+    color: rgba(255, 255, 255, 0.732); /* Accent color for the icons */
+    filter: drop-shadow(10px 5px 2px rgb(0, 0, 0));
+    transition: all 0.2s ease-in-out;
   }
   

@@ -30,3 +30,39 @@ body {
       transform: translateY(0px);
     }
   }
+
+  .heading-gradient {
+    background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .button-primary{
+    background-color: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  
+  .button-primary:hover{
+    background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
+    color: white;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-secondary{
+    background-color: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  .btn-secondary:hover{
+    background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
+    color: white;
+    border: none;
+  }
