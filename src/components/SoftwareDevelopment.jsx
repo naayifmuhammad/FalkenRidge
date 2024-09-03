@@ -11,14 +11,19 @@ const SoftwareDevelopment = () => {
       <h1 className='heading-gradient'>Software Development</h1>
       </div>
       <p className='para-primary'>{description}</p>
-      <ul className="service-list">
+      <div className="service-list">
       {services.map((service, index) => (
-        <li key={index} className="service-item">
-          <h3 className="service-title">{service.type}</h3>
-          <p className="service-description">{service.description}</p>
-        </li>
+        <div className="service">
+           <div className="left">
+            <h2>{service.type}</h2>
+            <p>{service.description}</p>
+           </div>
+           <div className="right">
+            <img src={service.image} alt="" />
+           </div>
+        </div>
       ))}
-      </ul>
+      </div>
     </section>
   );
 };

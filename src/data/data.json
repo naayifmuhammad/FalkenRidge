@@ -65,39 +65,49 @@
         "services": [
           {
             "type": "Enterprise Resource Planning (ERP) Systems",
-            "description": "Comprehensive ERP solutions that streamline your business processes, improve efficiency, and provide actionable insights."
+            "description": "Comprehensive ERP solutions that streamline your business processes, improve efficiency, and provide actionable insights.",
+            "image" : "software/erp.jpg"
           },
           {
             "type": "E-commerce Websites",
-            "description": "Custom-built e-commerce platforms designed to enhance your online sales, improve user experience, and integrate with payment gateways."
+            "description": "Custom-built e-commerce platforms designed to enhance your online sales, improve user experience, and integrate with payment gateways.",
+            "image" : "software/ecom.jpg"
           },
           {
             "type": "Management Websites",
-            "description": "Tailored management systems for various industries, including project management, HR management, and customer relationship management (CRM)."
+            "description": "Tailored management systems for various industries, including project management, HR management, and customer relationship management (CRM).",
+            "image" : "software/management.jpg"
           },
           {
             "type": "Business Websites",
-            "description": "Professional business websites that showcase your brand, services, and portfolio, designed to attract and engage your target audience."
+            "description": "Professional business websites that showcase your brand, services, and portfolio, designed to attract and engage your target audience.",
+            "image" : "software/business.jpg"
           },
           {
             "type": "Billing Software",
-            "description": "Reliable and user-friendly billing software that automates invoicing, payment tracking, and financial reporting for businesses of all sizes."
+            "description": "Reliable and user-friendly billing software that automates invoicing, payment tracking, and financial reporting for businesses of all sizes.",
+            "image" : "software/billing.jpg"
           },
           {
             "type": "Custom Web Applications",
-            "description": "Bespoke web applications developed to meet the specific needs of your business, from internal tools to customer-facing platforms."
+            "description": "Bespoke web applications developed to meet the specific needs of your business, from internal tools to customer-facing platforms.",
+            "image" : "software/webapp.jpg"
           },
           {
             "type": "Educational Websites",
-            "description": "Interactive and responsive educational websites designed to facilitate online learning, including course management and student engagement features."
+            "description": "Interactive and responsive educational websites designed to facilitate online learning, including course management and student engagement features.",
+            "image" : "software/educatoin.jpg"
           },
           {
             "type": "Healthcare Management Systems",
-            "description": "Comprehensive software solutions for healthcare providers, including patient management, appointment scheduling, and electronic health records."
+            "description": "Comprehensive software solutions for healthcare providers, including patient management, appointment scheduling, and electronic health records.",
+            "image" : "software/health.jpg"
           },
           {
             "type": "Inventory Management Systems",
-            "description": "Custom inventory management systems that help you track stock levels, manage orders, and streamline supply chain operations."
+            "description": "Custom inventory management systems that help you track stock levels, manage orders, and streamline supply chain operations.",
+            "image" : "software/inventory.jpg"
+            
           }
         ]
       },
