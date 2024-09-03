@@ -15,6 +15,7 @@ const Navbar = () => {
         ☰
       </button>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <a href="/">Home</a>
         <a href="/#projects">Projects</a>
         <a href="/#team">Team</a>
         {/* <a href="https://facebook.com" target='_blank' rel="noreferrer">{isOpen ? "Facebook" : <i className='fa fa-facebook-official'></i>}</a>

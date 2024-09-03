@@ -7,15 +7,17 @@ const SoftwareDevelopment = () => {
 
   return (
     <section id="software-development">
-      <h2>Software Development</h2>
-      <p>{description}</p>
+      <div className="text-wrapper">
+      <h1 className='heading-gradient'>Software Development</h1>
+      </div>
+      <p className='para-primary'>{description}</p>
       <ul className="service-list">
-        {services.map((service, index) => (
-          <li key={index} className="service-item">
-            <h3>{service.type}</h3>
-            <p>{service.description}</p>
-          </li>
-        ))}
+      {services.map((service, index) => (
+        <li key={index} className="service-item">
+          <h3 className="service-title">{service.type}</h3>
+          <p className="service-description">{service.description}</p>
+        </li>
+      ))}
       </ul>
     </section>
   );
