@@ -32,6 +32,8 @@ body {
   }
 
   .heading-gradient {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+    margin-bottom: 20px;
     background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,4 +67,10 @@ body {
     background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
     color: white;
     border: none;
+  }
+
+  .para-primary{
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 1.8rem;
+    text-align: left;
   }
