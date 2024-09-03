@@ -3,31 +3,31 @@
         {
           "name": "Software Development",
           "description": "Custom software solutions tailored to your business needs.",
-          "link": "/",
+          "link": "/software-development",
           "icon": "FaCode"
         },
         {
           "name": "Cloud Solutions",
           "description": "Scalable cloud solutions to enhance your business operations.",
-          "link": "/",
+          "link": "/cloud-solutions",
           "icon": "FaCloud"
         },
         {
           "name": "Consulting",
           "description": "Expert advice to guide your business strategy and technology.",
-          "link": "/",
+          "link": "/consulting",
           "icon": "FaLightbulb"
         },
         {
           "name": "Portfolio Development",
           "description": "Personal and professional portfolios for everyone and everything.",
-          "link": "/",
+          "link": "/portfolio",
           "icon": "FaPaintBrush"
         },
         {
           "name": "Product Design",
           "description": "Comprehensive product design services including logo design, UI/UX, and more.",
-          "link": "/",
+          "link": "/product-design",
           "icon": "FaPencilRuler"
         }
     ],

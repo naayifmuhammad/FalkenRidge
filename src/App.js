@@ -20,11 +20,12 @@ import Consulting from './components/Consulting';
 import CloudSolutions from './components/CloudSolutions';
 import ProductDesign from './components/ProductDesign';
 import WhatWeDo from './components/WhatWeDo';
+import SiteMaintenance from './components/SiteMaintenance';
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 2000,
-  speedAsDuration: true,
-});
+// export const scroll = new SmoothScroll('a[href*="#"]', {
+//   speed: 2000,
+//   speedAsDuration: true,
+// });
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
             <Route path="/consulting" element={<Consulting />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/product-design" element={<ProductDesign />} />
+            <Route path="/site-maintenance" element={<SiteMaintenance />} />
           </Routes>
         </div>
       </Router>

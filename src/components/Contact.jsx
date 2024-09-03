@@ -41,12 +41,17 @@ const Footer = () => {
     <section id="contact" className="contact">
       <div className="left item">
         <div className="contact-intro">
-          <h1>Let's Get In Touch <span><i className='fa fa-connectdevelop'></i></span></h1>
+          <h1>
+            Let's Get In Touch{" "}
+            <span>
+              <i className="fa fa-connectdevelop"></i>
+            </span>
+          </h1>
           <p>
             Or just reach out to{" "}
             <span className="mail-highlight">info@falkenridge.com</span>
           </p>
-          <img className='contact-image' src="/Images/contact.jpg" alt="" />
+          <img className="contact-image" src="/Images/contact.jpg" alt="" />
         </div>
       </div>
       <div className="right item">
@@ -55,7 +60,9 @@ const Footer = () => {
           <div className="">
             <div className="">
               <div className="">
-              <label htmlFor="name" className="form-label text-white">Name</label>
+                <label htmlFor="name" className="form-label text-white">
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -70,7 +77,9 @@ const Footer = () => {
             </div>
             <div className="col-md-6">
               <div className="">
-              <label htmlFor="email" className="form-label text-white">Email</label>
+                <label htmlFor="email" className="form-label text-white">
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -85,7 +94,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-          <label htmlFor="message" className="form-label">What do you want to tell us?</label>
+            <label htmlFor="message" className="form-label">
+              What do you want to tell us?
+            </label>
             <textarea
               name="message"
               id="message"
@@ -98,10 +109,7 @@ const Footer = () => {
             <p className="help-block text-danger"></p>
           </div>
           <div id="success"></div>
-          <button
-            type="submit"
-            className="form-control btn-primary"
-          >
+          <button type="submit" className="button-primary">
             Send Message
           </button>
         </form>
