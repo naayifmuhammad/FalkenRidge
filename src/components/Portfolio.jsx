@@ -66,15 +66,14 @@ const Portfolio = () => {
           <div className="portfolio-template-card">
             <div className="card-interactive-area">
               <div className="template-preview-image">
-                <a href={portfolio.link}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                 <i className="view-icon fa fa-eye"></i>
-                </a>
-                  <img
-                    src={portfolio.image && portfolio.image}
-                    alt="/portfolio/portfolio-grid-default.png"
-                  />
+                <p className="view-text">"{portfolio.description}"</p>
+                <img
+                  src={portfolio.image}
+                  alt=""
+                  onError={(e) => {
+                    e.target.src = "/portfolio/portfolio-grid-default.png";
+                  }}
+                />
               </div>
             </div>
             <div className="template-title">
@@ -82,19 +81,19 @@ const Portfolio = () => {
             </div>
             <div className="card-actions">
               <button
-                className="quote-btn"
+                className="get-quote button-primary"
                 onClick={() => openQuotePopup(portfolio.link)}
               >
-                Get Quote for the website
+                Get a Quote
               </button>
-              <a
+              {/* <a
                 href={portfolio.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="live-preview-btn"
               >
                 Live Preview
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
