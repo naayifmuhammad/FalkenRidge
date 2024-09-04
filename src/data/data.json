@@ -174,18 +174,78 @@
         ]
     },
     "portfolios": [
-    {
-      "title": "Personal Portfolio",
-      "description": "Showcase your personal achievements and skills.",
-      "image": "/portfolio/portfolio-grid-default.png",
-      "link": "https://interior-design-jckw.vercel.app/" 
-    },
-    {
-      "title": "Professional Portfolio",
-      "description": "Highlight your professional experiences and projects.",
-      "image": "/portfolio/portfolio-grid-default.png",
-      "link": "https://keralacongress.org.in/" 
-    }
+      {
+        "title": "Personal Portfolio",
+        "description": "Showcases an individual's skills, experiences, and personal projects.",
+        "image": "/portfolio/personal_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Creative Portfolio",
+        "description": "Highlights work in creative fields like graphic design, photography, art, and multimedia.",
+        "image": "/portfolio/creative_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Professional Portfolio",
+        "description": "Used by professionals like writers, consultants, or engineers to present their work experience and expertise.",
+        "image": "/portfolio/professional_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Business Portfolio",
+        "description": "Showcases a company's products, services, case studies, and client testimonials.",
+        "image": "/portfolio/business_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Freelancer Portfolio",
+        "description": "Tailored to freelancers, showcasing their range of services, previous work, and client testimonials.",
+        "image": "/portfolio/freelancer_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Online Resume/CV",
+        "description": "A digital version of a resume with added multimedia elements like videos, project links, and detailed case studies.",
+        "image": "/portfolio/online_resume_cv.png",
+        "link": ""
+      },
+      {
+        "title": "Project Portfolio",
+        "description": "Focuses on specific projects or case studies, often used by architects, engineers, or developers.",
+        "image": "/portfolio/project_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Agency Portfolio",
+        "description": "Showcases the collective work of an agency, including various projects across different clients.",
+        "image": "/portfolio/agency_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Photography Portfolio",
+        "description": "Dedicated to photographers, featuring high-quality image galleries.",
+        "image": "/portfolio/photography_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Art Portfolio",
+        "description": "Highlights an artist’s work, including paintings, illustrations, or sculptures.",
+        "image": "/portfolio/art_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "Video Portfolio",
+        "description": "Focused on video content, often used by videographers, filmmakers, or motion graphic designers.",
+        "image": "/portfolio/video_portfolio.png",
+        "link": ""
+      },
+      {
+        "title": "UX/UI Design Portfolio",
+        "description": "Showcases user experience and interface design projects, including prototypes and user flows.",
+        "image": "/portfolio/ux_ui_design_portfolio.png",
+        "link": ""
+      }
     ]
   }
   
