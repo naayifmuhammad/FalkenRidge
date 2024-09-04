@@ -11,8 +11,8 @@
 }
 
 .portfolio .portfolio-heading{
-  font-size: clamp(3rem, 4vw, 4rem);
-  margin: 2rem 0rem;
+  font-size: clamp(3rem, 4vw, 3rem);
+  margin: 3rem 0rem;
 }
 
 .portfolio-container {
@@ -73,9 +73,11 @@
   font-size: 1.5rem;
 }
 .select-a-portfolio-container .select-portfolio-header h1{
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid yellow;
   padding-bottom: 10px;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
 }
 
 .portfolio-templates-container{
