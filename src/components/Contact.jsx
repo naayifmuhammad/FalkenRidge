@@ -82,7 +82,7 @@ const Footer = () => {
             <textarea
               name="message"
               id="message"
-              className="custom-input text-white "
+              className="custom-input text-white textarea "
               rows="4"
               placeholder="Message"
               required

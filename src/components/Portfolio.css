@@ -1,3 +1,20 @@
+.portfolio{
+  margin: 2rem 3rem;
+}
+
+.portfolio .portfolio-intro-container{
+  margin-bottom: 3rem;
+}
+
+.portfolio-text-wrapper{
+  display: flex;
+}
+
+.portfolio .portfolio-heading{
+  font-size: clamp(3rem, 4vw, 4rem);
+  margin: 2rem 0rem;
+}
+
 .portfolio-container {
   display: flex;
   justify-content: center;
@@ -5,50 +22,137 @@
   gap: 20px;
 }
 
-.portfolio-card {
-  background-color: #1c1c1e;
-  border-radius: 10px;
-  padding: 20px;
-  width: 450px;
-  text-decoration: none;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; 
+.advantage-list{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.portfolio-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+.advantage-list ul {
+  list-style: none;
+  padding: 0rem 2rem;
+  height: 100%;
+  flex: 2;
 }
 
-.iframe-container {
-  position: relative;
-  width: 100%;
-  height: 450px; 
-  overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.portfolio-iframe {
+.advantage-list .image-container{
   width: 100%;
   height: 100%;
-  border: none;
+  flex: 1;
+}
+.advantage-list .image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
-.button-container {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+
+.advantage-list ul li {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
   display: flex;
+  align-items: baseline;
+}
+
+.advantage-list ul li i {
+  margin-right: 10px;
+  color: white;
+}
+
+.select-a-portfolio-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.select-a-portfolio-container .select-portfolio-header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.select-a-portfolio-container .select-portfolio-header h1{
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.portfolio-templates-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 10px;
+  margin-bottom: 5rem;
+}
+
+.portfolio-templates-container .portfolio-template-card{
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.portfolio-templates-container .portfolio-template-card .card-actions{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.template-preview-image{
+  position: relative;
+  height: 100%;
+}
+
+.template-preview-image:hover::before{
+  width: 100%;
+  opacity: 20%;
+  background-color: rgba(0, 0, 0, 0.501);
+  transition: all 0.3s ease-in-out;
+}
+.template-preview-image:hover .view-icon{
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.template-preview-image::before{
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: rgb(255, 174, 24);
+}
+
+.portfolio-templates-container .portfolio-template-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.template-preview-image .view-icon{
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  top: 35%;
+  font-size: 60px;
+  opacity: 0;
+}
+
+.portfolio-templates-container .portfolio-template-card .template-title{
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem 0rem;
+  padding: 5px;
 }
 
 .quote-btn, .live-preview-btn {
   padding: 10px 20px;
   background-color: rgba(0, 209, 178, 0.8); 
   color: #fff; 
-  border: 2px solid #00d1b2;
   border-radius: 50px; 
   font-size: 1rem;
   text-decoration: none;
@@ -56,7 +160,27 @@
   z-index: 10; 
 }
 
+
 .quote-btn:hover, .live-preview-btn:hover {
   background-color: #00d1b2; 
   color: #fff; 
+}
+
+@media(max-width:1080px){
+  .advantage-list{
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+}
+
+@media(max-width:850px){
+  
+  .portfolio-templates-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
 }

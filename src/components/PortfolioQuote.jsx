@@ -6,35 +6,36 @@ const initialState = {
   name: "",
   email: "",
   message: "",
+  user_request: "",
 };
 
 const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+const [{ name, email, message, user_request }, setState] = useState(initialState);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setState((prevState) => ({ ...prevState, [name]: value }));
+};
 
-  const clearState = () => setState({ ...initialState });
+const clearState = () => setState({ ...initialState });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm("service_yw3t3ch", "template_ff8efgu", e.target, "rufR-2AiPSl9XoSQ4")
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-          clearState();
-          window.location.reload(); 
-        },
-        (error) => {
-          alert("Could not send the message at the moment. Please contact us via email or phone.");
-          console.log(error.text);
-        }
-      );
-  };
+  emailjs
+    .sendForm("service_yw3t3ch", "template_ff8efgu", e.target, "rufR-2AiPSl9XoSQ4")
+    .then(
+      (result) => {
+        alert("We'll get back to you shortly");
+        clearState();
+        window.location.reload(); 
+      },
+      (error) => {
+        alert("Could not send the message at the moment. Please contact us via email or phone.");
+        console.log(error.text);
+      }
+    );
+};
 
   return (
     <div className="quote-popup">
@@ -42,12 +43,11 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
         <button className="close-btn" onClick={onClose}>
           &times;
         </button>
-        <h3>Request a Quote</h3>
+        <h1>Request a Quote</h1>
         <form name="sentMessage" validate onSubmit={handleSubmit}>
           <div className="">
             <div className="">
               <div className="">
-                <label htmlFor="name" className="form-label text-white">Name</label><br/>
                 <input
                   type="text"
                   id="name"
@@ -62,7 +62,6 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
             </div>
             <div className="col-md-6">
               <div className="">
-                <label htmlFor="email" className="form-label text-white">Email</label> <br/>
                 <input
                   type="email"
                   id="email"
@@ -77,11 +76,22 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
             </div>
           </div>
           <div className="">
-            <label htmlFor="message" className="form-label">Quote Request</label> <br/>
+            <textarea
+              name="user_request" //add the new field info here that you asked for
+              id="user_request"
+              placeholder="Tell us more..."
+              className="additional-details bg-dark text-white border-0 rounded-pill"
+              rows="4"
+              onChange={handleChange}
+            ></textarea>
+            <p className="help-block text-danger"></p>
+          </div>
+          <div className="">
             <textarea
               name="message"
               id="message"
               value={quote} 
+              hidden
               placeholder="Enter your quote details here..."
               className="quote-textarea bg-dark text-white border-0 rounded-pill"
               rows="4"
@@ -93,7 +103,7 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
           <div id="success"></div>
           <button
             type="submit"
-            className="form-control btn-primary"
+            className="popup-btn"
           >
             Send Message
           </button>

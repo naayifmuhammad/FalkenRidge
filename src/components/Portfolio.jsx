@@ -21,40 +21,85 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio">
-      <h2>Portfolio Development</h2>
-      <div className="portfolio-container">
+    <section id="portfolio" className="portfolio">
+      <div className="portfolio-intro-container">
+        <div className="heading-advantages">
+          <div className="portfolio-text-wrapper">
+            <h1 className="portfolio-heading heading-gradient">
+              Why Should You Have a Portfolio Website?
+            </h1>
+          </div>
+          <div className="advantage-list">
+            <div className="image-container">
+              <img src="/portfolio/portfolio.jpg" alt="" />
+            </div>
+            <ul>
+              <li>
+                <i class="fa fa-briefcase"></i> Showcase Your Work
+              </li>
+              <li>
+                <i class="fa fa-thumbs-up"></i> Build Credibility
+              </li>
+              <li>
+                <i class="fa fa-globe"></i> Expand Your Reach
+              </li>
+              <li>
+                <i class="fa fa-bullhorn"></i> Present your work and story the
+                way you want, without the constraints of social media platforms.
+              </li>
+              <li>
+                <i class="fa fa-trophy"></i>Show the range of your abilities by
+                including different types of projects
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="select-a-portfolio-container">
+        <div className="select-portfolio-header">
+          <h1>Select a template</h1>
+        </div>
+      </div>
+
+      <div className="portfolio-templates-container">
         {data.portfolios.map((portfolio) => (
-          <div key={portfolio.title} className="portfolio-card">
-            <div className="iframe-container">
-              <iframe 
-                src={portfolio.link} 
-                title={portfolio.title} 
-                loading="lazy" 
-                className="portfolio-iframe"
-              ></iframe>
-              <div className="button-container">
-                <button 
-                  className="quote-btn" 
-                  onClick={() => openQuotePopup(portfolio.link)}
-                > 
-                  Get Quote for the website 
-                </button>
-                <a 
-                  href={portfolio.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="live-preview-btn"
-                >
-                  Live Preview
+          <div className="portfolio-template-card">
+            <div className="card-interactive-area">
+              <div className="template-preview-image">
+                <a href={portfolio.link}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                 <i className="view-icon fa fa-eye"></i>
                 </a>
+                  <img
+                    src={portfolio.image && portfolio.image}
+                    alt="/portfolio/portfolio-grid-default.png"
+                  />
               </div>
             </div>
-            <h3>{portfolio.title}</h3>
-            <p>{portfolio.description}</p>
+            <div className="template-title">
+              <p>{portfolio.title}</p>
+            </div>
+            <div className="card-actions">
+              <button
+                className="quote-btn"
+                onClick={() => openQuotePopup(portfolio.link)}
+              >
+                Get Quote for the website
+              </button>
+              <a
+                href={portfolio.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="live-preview-btn"
+              >
+                Live Preview
+              </a>
+            </div>
           </div>
         ))}
       </div>
+
       {isQuotePopupOpen && (
         <PortfolioQuote
           quote={quote}

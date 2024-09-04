@@ -40,9 +40,8 @@ body {
   }
 
   .clickable-text-primary:hover {
-    background: -webkit-linear-gradient(45deg, #ff007f, #00d2ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: translateY(-1px);
+    transition: transform 0.2s ease-in-out;
   }
   
   .button-primary{

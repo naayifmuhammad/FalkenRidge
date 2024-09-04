@@ -177,13 +177,13 @@
     {
       "title": "Personal Portfolio",
       "description": "Showcase your personal achievements and skills.",
-      "image": "/images/personal-portfolio.jpg",
+      "image": "/portfolio/portfolio-grid-default.png",
       "link": "https://interior-design-jckw.vercel.app/" 
     },
     {
       "title": "Professional Portfolio",
       "description": "Highlight your professional experiences and projects.",
-      "image": "/images/professional-portfolio.jpg",
+      "image": "/portfolio/portfolio-grid-default.png",
       "link": "https://keralacongress.org.in/" 
     }
     ]

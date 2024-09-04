@@ -74,11 +74,14 @@
     background-color: transparent;
     border: rgba(255, 255, 255, 0.371) 1.5px solid;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     color: white;
     border-radius: 5px;
   }
   
+  .custom-input.textarea{
+    resize: none;
+  }
   .contact-btn {
     background-color: transparent;
     color: white;
