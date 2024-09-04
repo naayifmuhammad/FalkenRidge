@@ -66,16 +66,14 @@ const Portfolio = () => {
           <div className="portfolio-template-card">
             <div className="card-interactive-area">
               <div className="template-preview-image">
-                <p className='view-text'>
-                  "{portfolio.description}"
-                </p>
-                  <img
-                    src={portfolio.image}
-                    alt=""
-                    onError={(e) => {
-                      e.target.src = "/portfolio/portfolio-grid-default.png";
-                    }}
-                  />
+                <p className="view-text">"{portfolio.description}"</p>
+                <img
+                  src={portfolio.image}
+                  alt=""
+                  onError={(e) => {
+                    e.target.src = "/portfolio/portfolio-grid-default.png";
+                  }}
+                />
               </div>
             </div>
             <div className="template-title">
