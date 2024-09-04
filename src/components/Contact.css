@@ -79,6 +79,9 @@
     border-radius: 5px;
   }
   
+  .custom-input.textarea{
+    resize: none;
+  }
   .contact-btn {
     background-color: transparent;
     color: white;
