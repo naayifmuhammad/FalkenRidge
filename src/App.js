@@ -11,7 +11,7 @@ import TermsAndConditions from './components/TermsAndConditions'
 import Footer from './components/Footer';
 import Careers from './components/CareersPage';
 // import MissionAndVision from './components/MissionAndVision';
-import SmoothScroll from "smooth-scroll";
+// import SmoothScroll from "smooth-scroll";
 import Contact from "./components/Contact"
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';

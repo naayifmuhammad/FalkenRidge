@@ -42,12 +42,11 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
         <button className="close-btn" onClick={onClose}>
           &times;
         </button>
-        <h3>Request a Quote</h3>
+        <h1>Request a Quote</h1>
         <form name="sentMessage" validate onSubmit={handleSubmit}>
           <div className="">
             <div className="">
               <div className="">
-                <label htmlFor="name" className="form-label text-white">Name</label><br/>
                 <input
                   type="text"
                   id="name"
@@ -62,7 +61,6 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
             </div>
             <div className="col-md-6">
               <div className="">
-                <label htmlFor="email" className="form-label text-white">Email</label> <br/>
                 <input
                   type="email"
                   id="email"
@@ -77,11 +75,22 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
             </div>
           </div>
           <div className="">
-            <label htmlFor="message" className="form-label">Quote Request</label> <br/>
+            <textarea
+              name="additional-details" //add the new field info here that you asked for
+              id="additional-details"
+              placeholder="Tell us more..."
+              className="additional-details bg-dark text-white border-0 rounded-pill"
+              rows="4"
+              onChange={handleChange}
+            ></textarea>
+            <p className="help-block text-danger"></p>
+          </div>
+          <div className="">
             <textarea
               name="message"
               id="message"
               value={quote} 
+              hidden
               placeholder="Enter your quote details here..."
               className="quote-textarea bg-dark text-white border-0 rounded-pill"
               rows="4"
@@ -93,7 +102,7 @@ const PortfolioQuote = ({ quote, setQuote, onSubmit, onClose }) => {
           <div id="success"></div>
           <button
             type="submit"
-            className="form-control btn-primary"
+            className="popup-btn"
           >
             Send Message
           </button>
