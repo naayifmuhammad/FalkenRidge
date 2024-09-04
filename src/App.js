@@ -30,8 +30,8 @@ import SiteMaintenance from './components/SiteMaintenance';
 function App() {
   return (
     <>
-      <Navbar />
       <Router>
+        <Navbar />
         <div className="App">
           <Routes>
             <Route
