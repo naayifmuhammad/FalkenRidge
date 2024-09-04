@@ -26,8 +26,7 @@ const Portfolio = () => {
         <div className="heading-advantages">
           <div className="portfolio-text-wrapper">
             <h1 className="portfolio-heading heading-gradient">
-              Why Should You Have a <br />
-              Portfolio Website?
+              Why Should You Have a Portfolio Website?
             </h1>
           </div>
           <div className="advantage-list">

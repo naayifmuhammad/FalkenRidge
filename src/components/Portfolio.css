@@ -6,6 +6,9 @@
   margin-bottom: 3rem;
 }
 
+.portfolio-text-wrapper{
+  display: flex;
+}
 
 .portfolio .portfolio-heading{
   font-size: clamp(3rem, 4vw, 4rem);
@@ -161,4 +164,23 @@
 .quote-btn:hover, .live-preview-btn:hover {
   background-color: #00d1b2; 
   color: #fff; 
+}
+
+@media(max-width:1080px){
+  .advantage-list{
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+}
+
+@media(max-width:850px){
+  
+  .portfolio-templates-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
 }
