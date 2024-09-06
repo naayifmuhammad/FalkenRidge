@@ -15,7 +15,7 @@
     background: linear-gradient(135deg, rgba(255, 234, 0, 0.912), rgba(134, 50, 252, 0.94)), rgba(0, 0, 0, 0.808);
     border-radius: 10px;
     padding: 5rem 2rem;
-    width: 40vw;
+    width: 40%;
     position: relative;
   }
   
@@ -23,8 +23,10 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background: transparent;
+    border-radius: 50%;
     border: none;
+    background-color: transparent;
+    text-align: center;
     font-size: 24px;
     color: #fff;
     cursor: pointer;
@@ -32,7 +34,7 @@
   }
   
   .close-btn:hover {
-    color: #f00; /* Red color on hover */
+    color: rgb(150, 0, 0); /* Red color on hover */
   }
   
   h1 {
@@ -49,19 +51,20 @@
   .form-control {
     width: 80%;
     padding: 0.75rem;
-    border: none;
+    border: rgba(255, 255, 255, 0.541) solid 1px;
     border-radius: 5px;
-    background-color: #333; /* Dark background for input fields */
+    background-color: #33333388; /* Dark background for input fields */
     color: #fff; /* Text color */
     margin-bottom: 2rem;
   }
   
   .form-control::placeholder {
-    color: #aaa; /* Placeholder text color */
+    color: #a7a7a7; /* Placeholder text color */
   }
   
   .quote-textarea {
-    background-color: #333; /* Dark background */
+    border: rgba(255, 255, 255, 0.541) solid 1px;
+    background-color: #33333388; /* Dark background for input fields */
     color: #fff; /* Text color */
     border-radius: 5px;
   }
@@ -85,11 +88,21 @@
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
-    background-color: #333; /* Dark background for input fields */
+    border: rgba(255, 255, 255, 0.541) solid 1px;
+    background-color: #33333388; /* Dark background for input fields */
     color: #fff; /* Text color */
     margin-bottom: 1.5rem;
   resize: none;
 }
 .additional-details::placeholder{
   color: #aaa;
+}
+
+@media(max-width:850px){
+  .quote-popup-content {
+    padding: 5rem 2rem;
+    width: 70%;
+    position: relative;
+  }
+  
 }

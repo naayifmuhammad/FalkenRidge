@@ -28,7 +28,8 @@ const handleSubmit = (e) => {
       (result) => {
         alert("We'll get back to you shortly");
         clearState();
-        window.location.reload(); 
+        window.location.reload();
+        onClose(); 
       },
       (error) => {
         alert("Could not send the message at the moment. Please contact us via email or phone.");
