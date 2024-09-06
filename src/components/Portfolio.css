@@ -35,6 +35,8 @@
   flex: 2;
 }
 
+
+
 .advantage-list .image-container{
   width: 100%;
   height: 100%;
@@ -60,10 +62,131 @@
   color: white;
 }
 
+
+/* Process Tree CSS */
+
+.process-tree-container{
+  margin: 3rem 1rem;
+}
+
+
+.process-tree {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.process-tree-container h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+
+.process-step {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 25px 15px;
+  border-radius: 5px;
+}
+
+.process-tree .left {
+  transform: translateX(-60%);
+  }
+  
+   .process-tree .right{
+    transform: translateX(60%);
+  } 
+
+  .process-tree .left .step-content::after{
+    position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  top: 45%;
+  right: 5px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.process-tree .right .step-content::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  top: 45%;
+  left : 5px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+
+
+.process-tree .line{
+  position: absolute;
+  height: 80%;
+  width: 1.5px;
+  top: 10%;
+  background-color: white;
+  transform-origin: bottom;
+
+}
+
+.process-tree .line::before{
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  top: 0;
+  transform: translateX(-50%);
+}
+.process-tree .line::after{
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.process-step .step-content{
+  display: flex;
+  padding: 30px 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(29, 29, 29);
+  font-size: 1.2em;
+}
+
+
 .select-a-portfolio-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .select-a-portfolio-container .select-portfolio-header{
@@ -72,6 +195,13 @@
   text-align: center;
   font-size: 1.5rem;
 }
+.select-a-portfolio-container span{
+  width: 70%;
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+  text-align: center;
+}
+
 .select-a-portfolio-container .select-portfolio-header h1{
   border-bottom: 1px solid yellow;
   padding-bottom: 10px;
@@ -79,6 +209,38 @@
   margin-top: 2rem;
   font-size: 2.5rem;
 }
+
+
+.service-details-icons-container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 100px;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 3rem;
+}
+
+.service-details-icons-container .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.service-details-icons-container .item svg {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255); 
+  color: rgb(31, 31, 31);
+  padding: 10px; 
+  border-radius: 50%; 
+  clip-path: circle(50% at 50% 50%); 
+}
+
 
 .portfolio-templates-container{
   display: grid;
@@ -104,7 +266,7 @@
 
 .template-preview-image{
   position: relative;
-  height: 100%;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -114,7 +276,8 @@
   background-color: black;
   transition: width 0.1s ease-in-out;
   z-index: 1;
-  border: 4px black solid;
+  border: 2px rgba(255, 255, 255, 0.697) solid;
+  box-sizing: border-box;
 }
 
 .template-preview-image:hover img{
@@ -125,14 +288,13 @@
   position: absolute;
   content: "";
   width: 5px;
-  height: 98%;
+  height: 100%;
   background-color:yellow;
 }
 
 .portfolio-templates-container .portfolio-template-card img{
-  width: 400;
+  width: 400px;
   height: 200px;
-  object-fit: cover;
   z-index: -1;
 }
 
@@ -192,9 +354,45 @@
     align-items: flex-start;
   }
 
+  /* handle the tree for mobile here */
+  .process-tree .left {
+    transform: translateX(1%);
+  }
+  .process-tree .right {
+    transform: translateX(1%);
+  }
+
+  .process-tree .left .step-content::after{
+    left: 5px;
+    right: unset;
+  }
+
+  .process-tree{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    align-items: unset;
+  }
+
+  .line-container{
+    display: flex;
+    align-items: center;
+  }
+  
+  .process-tree .line{
+    position: relative;
+    height: 95%;
+    top: unset;
+    background-color: white;
+  }
+  
+  .service-details-icons-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
 }
 
-@media(max-width:850px){
+@media(max-width:920px){
   
   .portfolio-templates-container{
     display: flex;
@@ -202,4 +400,9 @@
     justify-content: center;
     align-items: center;
   }  
+
+  .select-a-portfolio-container span{
+    width: 100%;
+    padding: 10px;
+  }
 }
