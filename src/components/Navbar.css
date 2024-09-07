@@ -48,8 +48,9 @@
   transition: color 0.3s;
 }
 
-.navbar-links a:hover {
-  color: var(--primary-color);
+.current-page{
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 /* Media query for smaller screens */
@@ -89,5 +90,9 @@
     gap: 10px;
     width: 100%;
     text-align: center;
+  }
+  .current-page{
+    padding-bottom: unset;
+    border-bottom: unset;
   }
 }

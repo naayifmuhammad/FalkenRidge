@@ -16,17 +16,24 @@ const Projects = () => {
   
     obs.observe(projectRef.current);
 
+    window.ScrollReveal().reveal('.left ,.right', {
+      duration: 1500,        
+      distance: '20px',      
+      origin: 'bottom',       
+      reset: true,
+    });
+
     return () => obs.disconnect();
 
   },[]);
   
   return (
     <section ref={projectRef} id="projects" className="projects-section">
-      <div>
+      <div className='left'>
         <h3>{startCounting && <CountUp end={60} duration={4}/>}+ Projects Completed</h3>
         <p><i className='fa fa-truck'></i> We deliver quality work every time.</p>
       </div>
-      <div>
+      <div className='right'>
         <h3>{startCounting && <CountUp end={100} duration={4}  />}+ Satisfied Clients</h3>
         <p><i className='fa fa-line-chart'></i> Your success is our priority.</p>
       </div>

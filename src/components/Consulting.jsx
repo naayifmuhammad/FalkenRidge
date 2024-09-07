@@ -1,24 +1,34 @@
 import React from 'react';
 import data from '../data/data.json';
-import './Consulting.css';
+import './ServicesPage.css';
 
 const Consulting = () => {
   const { description, services } = data.consulting;
 
   return (
-    <section id="consulting">
-      <h2>Consulting</h2>
-      <p>{description}</p>
-      <div className="consulting-services">
-        <h3>Our Consulting Services:</h3>
-        <ul className="service-list">
-          {services.map((service, index) => (
-            <li key={index} className="service-item">
-              <h4>{service.type}</h4>
-              <p>{service.description}</p>
-            </li>
-          ))}
-        </ul>
+    <section id="service-section">
+      <div className="text-wrapper">
+      <h1 className='heading-gradient'>Consulting</h1>
+      </div>
+      <p className='para-primary'>{description}</p>
+      <div className="dots">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+      <div className="service-list">
+      {services.map((service, index) => (
+        <div className="service">
+           <div className="left">
+            <h2>{service.type}</h2>
+            <p>{service.description}</p>
+           </div>
+           {service.image && 
+           <div className="right">
+           <img src={service.image} alt="" />
+          </div>}
+        </div>
+      ))}
       </div>
     </section>
   );

@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState(location.pathname + location.hash);
+
+  useEffect(() => {
+    setCurrentPage(location.pathname + location.hash);
+  }, [location]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLinkClick = (path) => {
+    setCurrentPage(path);
+    if (isOpen) {
+      toggleMenu(); // Close the menu when a link is clicked
+    }
   };
 
   return (
@@ -15,12 +29,34 @@ const Navbar = () => {
         ☰
       </button>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <a href="/">Home</a>
-        <a href="/#projects">Projects</a>
-        <a href="/#team">Team</a>
-        {/* <a href="https://facebook.com" target='_blank' rel="noreferrer">{isOpen ? "Facebook" : <i className='fa fa-facebook-official'></i>}</a>
-        <a href="https://www.linkedin.com/company/falkenridge" target='_blank' rel="noreferrer">{isOpen ? "LinkedIn" : <i className='fa fa-linkedin'></i>}</a> */}
-        <a href="/contact" className='contact-button'>Contact</a>
+        <a
+          href="/"
+          onClick={() => handleLinkClick('/')}
+          className={`clickable-text-primary ${currentPage === '/' ? 'current-page' : ''}`}
+        >
+          Home
+        </a>
+        <a
+          href="/#projects"
+          onClick={() => handleLinkClick('/#projects')}
+          className={`clickable-text-primary ${currentPage === '/#projects' ? 'current-page' : ''}`}
+        >
+          Projects
+        </a>
+        <a
+          href="/#team"
+          onClick={() => handleLinkClick('/#team')}
+          className={`clickable-text-primary ${currentPage === '/#team' ? 'current-page' : ''}`}
+        >
+          Team
+        </a>
+        <a
+          href="/contact"
+          onClick={() => handleLinkClick('/contact')}
+          className={`clickable-text-primary ${currentPage === '/contact' ? 'current-page' : ''}`}
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );

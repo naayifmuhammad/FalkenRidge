@@ -11,7 +11,7 @@ import TermsAndConditions from './components/TermsAndConditions'
 import Footer from './components/Footer';
 import Careers from './components/CareersPage';
 // import MissionAndVision from './components/MissionAndVision';
-import SmoothScroll from "smooth-scroll";
+// import SmoothScroll from "smooth-scroll";
 import Contact from "./components/Contact"
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
@@ -20,17 +20,19 @@ import Consulting from './components/Consulting';
 import CloudSolutions from './components/CloudSolutions';
 import ProductDesign from './components/ProductDesign';
 import WhatWeDo from './components/WhatWeDo';
+import SiteMaintenance from './components/SiteMaintenance';
+import OurProducts from './components/OurProducts';
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 2000,
-  speedAsDuration: true,
-});
+// export const scroll = new SmoothScroll('a[href*="#"]', {
+//   speed: 2000,
+//   speedAsDuration: true,
+// });
 
 function App() {
   return (
     <>
-      <Navbar />
       <Router>
+        <Navbar />
         <div className="App">
           <Routes>
             <Route
@@ -58,12 +60,13 @@ function App() {
               path="/contact"  
               element={<Contact />} 
             />
-            
+            <Route path="/our-products" element={<OurProducts />} />
             <Route path="/software-development" element={<SoftwareDevelopment />} />
             <Route path="/cloud-solutions" element={<CloudSolutions />} />
             <Route path="/consulting" element={<Consulting />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/product-design" element={<ProductDesign />} />
+            <Route path="/site-maintenance" element={<SiteMaintenance />} />
           </Routes>
         </div>
       </Router>

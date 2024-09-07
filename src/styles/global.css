@@ -38,6 +38,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .clickable-text-primary:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s ease-in-out;
+  }
   
   .button-primary{
     background-color: none;
