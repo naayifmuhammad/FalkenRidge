@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import data from '../data/data.json';
 import './Portfolio.css';
 import PortfolioQuote from './PortfolioQuote'; 
@@ -25,37 +25,7 @@ const Portfolio = () => {
     setQuote(`Here's the selected template: ${link}\n\n Get a Quote for this:`);
     setQuotePopupOpen(true);
   };
-
-  useEffect(() => {
-
-    const sr = window.ScrollReveal();
-
-    const revealElements = () => {
-      sr.reveal('.left', {
-        duration: 1500,
-        distance: '40px',
-        origin: 'right',
-        reset: false,
-      });
-
-      sr.reveal('.right', {
-        duration: 1500,
-        distance: '40px',
-        origin: 'left',
-        reset: false,
-      });
-
-
-      revealElements();
-
-      window.addEventListener('resize', revealElements);
-
-      return() =>{
-        window.removeEventListener('resize',revealElements);
-      };
-    };
-  }, []);
-
+    
   return (
     <section id="portfolio" className="portfolio">
       <div className="portfolio-intro-container">
