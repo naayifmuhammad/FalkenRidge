@@ -21,6 +21,7 @@ import CloudSolutions from './components/CloudSolutions';
 import ProductDesign from './components/ProductDesign';
 import WhatWeDo from './components/WhatWeDo';
 import SiteMaintenance from './components/SiteMaintenance';
+import OurProducts from './components/OurProducts';
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
 //   speed: 2000,
@@ -59,7 +60,7 @@ function App() {
               path="/contact"  
               element={<Contact />} 
             />
-            
+            <Route path="/our-products" element={<OurProducts />} />
             <Route path="/software-development" element={<SoftwareDevelopment />} />
             <Route path="/cloud-solutions" element={<CloudSolutions />} />
             <Route path="/consulting" element={<Consulting />} />

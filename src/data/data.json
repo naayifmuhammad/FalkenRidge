@@ -173,6 +173,20 @@
         }
         ]
     },
+    "products": [
+        {
+          "name": "ERP Management Software",
+          "description": "Our ERP Management Software allows companies to manage all types of company needs. It can be delivered as a hosted solution or installed locally on customer systems.",
+          "icon": "FaServer",
+          "link": "/erp-management-software"
+        },
+        {
+          "name": "E-Construction Website",
+          "description": "The eConstruction website is a platform for contractors and companies to list profiles, services, and construction offerings. It provides building plans, estimates, and matches customers with suitable contractors.",
+          "icon": "FaBuilding",
+          "link": "/econstruction-website"
+        }
+    ],
     "portfolios": [
       {
         "title": "Personal Portfolio",

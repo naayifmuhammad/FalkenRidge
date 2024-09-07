@@ -50,7 +50,7 @@ const HeaderBanner = () => {
           At FalkenRidge, we leverage cutting-edge technology and innovative solutions to drive your business forward. From bespoke software development to scalable cloud solutions, our expertise spans the full spectrum of modern tech needs.
         </p>
         <div className="cta-container">
-          <a href="#contact" className="button-primary">Get in Touch</a>
+          <a href="/contact" className="button-primary">Get in Touch</a>
           <a href="#services" className="button-primary">Our Services</a>
         </div>
       </div>
