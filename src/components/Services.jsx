@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import data from '../data/data.json';
 import { FaCode, FaCloud, FaLightbulb, FaPaintBrush, FaPencilRuler } from 'react-icons/fa';
 import './Services.css';
+import { ImProfile } from "react-icons/im";
+
 
 const iconMap = {
   FaCode: <FaCode />,
   FaCloud: <FaCloud />,
   FaLightbulb: <FaLightbulb />,
-  FaPaintBrush: <FaPaintBrush />,
+  FaPaintBrush: <ImProfile />,
   FaPencilRuler: <FaPencilRuler />
 };
 
