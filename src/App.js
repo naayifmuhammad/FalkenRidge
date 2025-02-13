@@ -44,7 +44,7 @@ function App() {
                   {/* <MissionAndVision /> */}
                   <Projects />
                   <Services />
-                  <Team />
+                 {/* <Team />  */}
                 </>
               }
             />
